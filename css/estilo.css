@@ -35,8 +35,8 @@ body {
     height: 100%;
 }
 
-.sobre {
-    position: relative;
+.foto-sobre img {
+    width: 100%;
 }
 
 .s-escura {
