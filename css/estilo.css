@@ -3,9 +3,6 @@ body {
     font-size: 1.5rem;
     line-height: 1.5;
     text-align: center;
-}
-
-.nav-link a {
     color: #630e0a;
 }
 
@@ -47,4 +44,10 @@ body {
 .s-clara {
     background-color: #ddd;
     color: #630e0a;
+}
+
+@media (max-width: 455px) {
+    #img-logo-topo {
+        width: 120px;
+    }
 }
