@@ -1,0 +1,50 @@
+body {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.nav-link a {
+    color: #630e0a;
+}
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+#topo .container-fluid {
+    padding: 3% 15% 0;
+    color: #630e0a;
+}
+
+#topo .row {
+    padding-top: 5%;
+}
+
+.chamada-topo h1 {
+    /* font-family: 'Dacing Script', cursive; */
+    font-size: 4.5rem;
+    font-weight: bolder;
+    line-height: 1.5;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.foto-topo img {
+    height: 100%;
+}
+
+.sobre {
+    position: relative;
+}
+
+.s-escura {
+    background-color: #e19999;
+    color: #630e0a;
+}
+
+.s-clara {
+    background-color: #ddd;
+    color: #630e0a;
+}
