@@ -1,9 +1,10 @@
 body {
+    color: #630e0a;
     font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
     line-height: 1.5;
     text-align: center;
-    color: #630e0a;
+
 }
 
 .container-fluid {
@@ -15,9 +16,9 @@ body {
     color: #630e0a;
 }
 
-#topo .row {
+/* #topo .row {
     padding-top: 5%;
-}
+} */
 
 .chamada-topo h1 {
     /* font-family: 'Dacing Script', cursive; */
@@ -26,6 +27,7 @@ body {
     line-height: 1.5;
     margin-top: 10%;
     margin-left: 10%;
+    text-align: left;
 }
 
 .foto-topo img {
@@ -49,5 +51,8 @@ body {
 @media (max-width: 455px) {
     #img-logo-topo {
         width: 120px;
+    }
+    h1{
+      text-align: center;
     }
 }
