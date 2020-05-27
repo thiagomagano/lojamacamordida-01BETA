@@ -1,9 +1,19 @@
 body {
+    color: #630e0a;
     font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
     line-height: 1.5;
     text-align: center;
-    color: #630e0a;
+
+}
+.texto-topo {
+    /* font-family: 'Dacing Script', cursive; */
+    font-size: 4.5rem;
+    font-weight: bolder;
+    line-height: 1.5;
+    margin-left: 10%;
+    margin-top: 10%;
+    text-align: left;
 }
 
 .container-fluid {
@@ -11,22 +21,16 @@ body {
 }
 
 #topo .container-fluid {
-    padding: 3% 15% 0;
     color: #630e0a;
+    padding: 3% 15% 0;
+
 }
 
-#topo .row {
+/* #topo .row {
     padding-top: 5%;
-}
+} */
 
-.chamada-topo h1 {
-    /* font-family: 'Dacing Script', cursive; */
-    font-size: 4.5rem;
-    font-weight: bolder;
-    line-height: 1.5;
-    margin-top: 10%;
-    margin-left: 10%;
-}
+
 
 .foto-topo img {
     height: 100%;
@@ -49,5 +53,8 @@ body {
 @media (max-width: 455px) {
     #img-logo-topo {
         width: 120px;
+    }
+    .texto-topo{
+      text-align: center;
     }
 }
