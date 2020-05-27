@@ -6,29 +6,31 @@ body {
     text-align: center;
 
 }
+.texto-topo {
+    /* font-family: 'Dacing Script', cursive; */
+    font-size: 4.5rem;
+    font-weight: bolder;
+    line-height: 1.5;
+    margin-left: 10%;
+    margin-top: 10%;
+    text-align: left;
+}
 
 .container-fluid {
     padding: 7% 15%;
 }
 
 #topo .container-fluid {
-    padding: 3% 15% 0;
     color: #630e0a;
+    padding: 3% 15% 0;
+
 }
 
 /* #topo .row {
     padding-top: 5%;
 } */
 
-.chamada-topo h1 {
-    /* font-family: 'Dacing Script', cursive; */
-    font-size: 4.5rem;
-    font-weight: bolder;
-    line-height: 1.5;
-    margin-top: 10%;
-    margin-left: 10%;
-    text-align: left;
-}
+
 
 .foto-topo img {
     height: 100%;
@@ -52,7 +54,7 @@ body {
     #img-logo-topo {
         width: 120px;
     }
-    h1{
+    .texto-topo{
       text-align: center;
     }
 }
