@@ -3,8 +3,19 @@ body {
     font-family: 'Bebas Neue', cursive;
     line-height: 1.5;
     text-align: center;
-
 }
+
+footer {
+    background-color: #630e0a;
+    color: #e19999;
+}
+
+footer p {
+    padding-bottom: 20px;
+    margin: 0;
+    font-size: 0.9em;
+}
+
 .texto-topo {
     /* font-family: 'Dacing Script', cursive; */
     font-size: 4.5rem;
@@ -22,14 +33,12 @@ body {
 #topo .container-fluid {
     color: #630e0a;
     padding: 3% 15% 0;
-
 }
+
 
 /* #topo .row {
     padding-top: 5%;
 } */
-
-
 
 .foto-topo img {
     height: 100%;
@@ -45,47 +54,60 @@ body {
 }
 
 .s-clara {
-    background-color: #ddd;
-    color: #630e0a;
+    background-color: #630e0a;
+    ;
+    color: #B24C47;
 }
-.endereco p, .following p{
-  color: #e19999;
+
+.endereco p,
+.following p {
+    color: #e19999;
 }
-.gmaps{
-  border-radius: 1px;
-  border: 1px;
-  margin: 10px auto;
-  width: 90%;
+
+.gmaps {
+    border-radius: 1px;
+    border: 1px;
+    margin: 10px auto;
+    width: 90%;
 }
-.container-fluid.contato{
-  padding: 7% 15%;
-  color: #e19999;
+
+.container-fluid.contato {
+    padding: 7% 15%;
+    color: #e19999;
 }
-.following{
+
+.following {}
+
+#contato h2 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
-#contato h2{
-  font-size:3.5rem;
-  margin-bottom: 15px;
-  font-weight: bold;
+
+.social {
+    padding-top: 5%;
+    padding-bottom: 10%;
 }
-.social{
-  padding-top: 5%;
-  padding-bottom: 10%;
+
+.social-link a {
+    color: #e19999;
+    text-decoration: none;
+    margin-right: 5px;
 }
-.social-link a{
-  color: #e19999;
-  text-decoration: none;
-  margin-right: 5px;
+
+.social-link {
+    margin: 5px;
 }
-.social-link{
-  margin: 5px;
+
+.social-link a:hover {
+    color: #B24C47;
 }
 
 @media (max-width: 455px) {
     #img-logo-topo {
         width: 120px;
     }
-    .texto-topo{
-      text-align: center;
+    .texto-topo {
+        text-align: center;
     }
 }
