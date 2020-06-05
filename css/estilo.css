@@ -1,3 +1,5 @@
+@import url(//db.onlinewebfonts.com/c/161d128374cde99336399af9d7a51f7b?family=Minerva);
+@import url(//fonts.googleapis.com/css2?family=Montserrat);
 body {
     color: #630e0a;
     font-family: 'Bebas Neue', cursive;
@@ -5,24 +7,38 @@ body {
     text-align: center;
 }
 
+body p {
+    font-family: 'montserrat', sans-serif;
+}
+
 footer {
     background-color: #630e0a;
     color: #e19999;
 }
 
-footer p {
-    padding-bottom: 20px;
-    margin: 0;
-    font-size: 0.9em;
+.container-nav {
+    padding: 10px 13% 0;
+}
+
+.navbar {
+    margin-left: 0;
+    padding: 0;
+}
+
+.logo-label {
+    font-family: 'Minerva';
+    color: #e19999;
+    font-weight: 500;
+}
+
+.img-logo-topo {
+    width: 20%;
 }
 
 .texto-topo {
-    /* font-family: 'Dacing Script', cursive; */
     font-size: 4.5rem;
     font-weight: bolder;
-    line-height: 1.5;
-    margin-left: 10%;
-    margin-top: 10%;
+    line-height: 1.8;
     text-align: left;
 }
 
@@ -31,55 +47,42 @@ footer p {
 }
 
 #topo .container-fluid {
-    color: #630e0a;
-    padding: 3% 15% 0;
+    padding: 1% 15% 0;
 }
 
-
-/* #topo .row {
-    padding-top: 5%;
-} */
+.row {
+    margin-top: 3%;
+}
 
 .foto-topo img {
     height: 100%;
-}
-
-.foto-sobre img {
-    width: 100%;
+    margin-left: 100px;
 }
 
 .s-escura {
+    background-color: #630e0a;
+    color: #e19999
+}
+
+.s-clara {
     background-color: #e19999;
     color: #630e0a;
 }
 
-.s-clara {
-    background-color: #630e0a;
-    ;
-    color: #B24C47;
-}
-
-.endereco p,
-.following p {
-    color: #e19999;
-}
-
 .gmaps {
-    border-radius: 1px;
-    border: 1px;
+    border-radius: 2px;
+    border: 2px;
     margin: 10px auto;
     width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.19);
 }
 
 .container-fluid.contato {
     padding: 7% 15%;
-    color: #e19999;
 }
 
-.following {}
-
 #contato h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 15px;
     font-weight: bold;
 }
@@ -90,9 +93,9 @@ footer p {
 }
 
 .social-link a {
-    color: #e19999;
     text-decoration: none;
     margin-right: 5px;
+    color: #630e0a;
 }
 
 .social-link {
@@ -103,11 +106,36 @@ footer p {
     color: #B24C47;
 }
 
-@media (max-width: 455px) {
-    #img-logo-topo {
-        width: 120px;
-    }
-    .texto-topo {
-        text-align: center;
-    }
+
+/* produtos */
+
+.prod-container {
+    padding: 7% 15%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.item-produto img {
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.7;
+}
+
+.item-produto img:hover {
+    opacity: 1;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-family: 'montserrat';
+    font-size: 0.9em;
+}
+
+.footer-p {
+    padding: 25px 0 20px;
+    margin: 0;
+    font-size: 0.8em;
+    font-family: 'Montserrat';
 }

@@ -22,25 +22,30 @@
     <!-- font answone -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
 
+    <!-- gallery -->
+
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="/js/gallery.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+
 
     <title> Maça Mordida </title>
 </head>
 
 <body>
-
-    <header id="topo" class="s-escura">
-        <div class="container-fluid">
+    <header id="topo">
+        <div class="container-nav s-escura">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand" href="#">
-                    <img id="img-logo-topo" src="images/logo-maca-label-mini.png" alt="logo maça mordida">
+                    <img class="img-logo-topo" src="images/logo-so-maca.png" alt="logo maça mordida">
+                    <span class="logo-label">Maçã Mordida</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon ml-auto"></span>
         </button>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-
                         <li class="nav-item">
                             <a class="nav-link" href="#sobre">Sobre</a>
                         </li>
@@ -54,16 +59,20 @@
                             <a class="nav-link" href="#contato">Contato</a>
                         </li>
                     </ul>
-
                 </div>
             </nav>
+        </div>
+
+
+        <div class="container-fluid s-escura">
             <div class="row">
                 <div class="chamada-topo col-lg-6">
                     <h1 class="texto-topo">A melhor loja de Lingere e SexShop de Alvorada!</h1>
                 </div>
 
                 <div class="foto-topo col-lg-6">
-                    <img src="images/modelo-f.png" alt="foto-topo">
+                    <!-- <img src="images/modelo-f.png" alt="foto-topo"> -->
+
                 </div>
 
             </div>
@@ -72,12 +81,35 @@
         </div>
     </header>
 
-    <section id="sobre" class="s-clara">
+    <section id="produto" class="s-clara">
+        <h2>OS MAIS VENDIDOS!</h2>
 
-    </section>
+        <div class="prod-container">
 
-    <section id="produto" class="s-escura">
 
+            <div class="item-produto">
+                <figure>
+                    <img src="images/pijama1.jpg">
+                    <figcaption>Pijama florido - todos Tamanhos</figcaption>
+                </figure>
+
+            </div>
+
+            <div class="item-produto">
+                <figure>
+                    <img src="images/pijama2.jpg">
+                    <figcaption>Pijama Azul - Todos Tamanhos</figcaption>
+                </figure>
+            </div>
+
+            <div class="item-produto">
+                <figure>
+                    <img src="images/pijama3.jpg">
+                    <figcaption>Pijama Rosa</figcaption>
+                </figure>
+            </div>
+
+        </div>
 
     </section>
     <!-- <div class="marcas">
@@ -96,19 +128,19 @@
                     <!-- PESQUISAR COMO COLOCAR UM LOCAL DO GOOOGLE MAPAS -->
 
                     <iframe class="gmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d863.8586845113081!2d-51.06997817083609!3d-29.99567099886874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951975ac5a8dd4a9%3A0x1f24d6851e829409!2sMa%C3%A7%C3%A3%20Mordida%20Lingerie%20e%20SexShop!5e0!3m2!1spt-BR!2sbr!4v1590716046171!5m2!1spt-BR!2sbr"></iframe>
-                    <p>Avenida Getulio Vargas 3109 parada 52 - Alvorada - RS</p>
+                    <p>Av. Getúlio Vargas 3109 parada 52, Alvorada - RS</p>
                 </div>
                 <div class="following col-lg-6">
                     <h2>Siga a Maça!</h2>
 
                     <div class="social">
                         <div class="social-link">
-                            <a href="https://www.instagram.com/lojamacamordida/"><i class="fab fa-instagram-square fa-3x"></i></a>
-                            <a href="https://www.facebook.com/lojamacamordida"><i class="fab fa-facebook-square fa-3x"></i></a>
+                            <a href="https://www.instagram.com/lojamacamordida/" target="_blank"><i class="fab fa-instagram-square fa-3x"></i></a>
+                            <a href="https://www.facebook.com/lojamacamordida" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
                         </div>
                         <div class="social-link">
                             <a href=""><i class="fab fa-twitter-square fa-3x"></i></a>
-                            <a href="https://api.whatsapp.com/send?phone=5551981519607&text=Ola,%20tem%20promo%C3%A7%C3%A3o?"><i class="fab fa-whatsapp-square fa-3x"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=5551981519607&text=Ola,%20tem%20promo%C3%A7%C3%A3o?" target="_blank"><i class="fab fa-whatsapp-square fa-3x"></i></a>
                         </div>
                     </div>
                     <p>
@@ -122,7 +154,7 @@
     </section>
 
     <footer id="rodape">
-        <p>&copy 2020 Develop with ❤️ by Thiago Magano 👨‍💻</p>
+        <p class="footer-p">&copy 2020 Desenvolvido com ❤️ por Thiago Magano 👨‍💻</p>
     </footer>
 
 
