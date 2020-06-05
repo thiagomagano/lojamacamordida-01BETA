@@ -1,5 +1,6 @@
-@import url(//db.onlinewebfonts.com/c/161d128374cde99336399af9d7a51f7b?family=Minerva);
-@import url(//fonts.googleapis.com/css2?family=Montserrat);
+/* @import url(//db.onlinewebfonts.com/c/161d128374cde99336399af9d7a51f7b?family=Minerva);
+@import url(//fonts.googleapis.com/css2?family=Montserrat); */
+
 body {
     color: #630e0a;
     font-family: 'Bebas Neue', cursive;
@@ -25,9 +26,10 @@ footer {
 }
 
 .logo-label {
-    font-family: 'Minerva';
+    font-family: 'Sacramento', Arial, Helvetica, sans-serif;
     color: #e19999;
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 1.3em
 }
 
 .img-logo-topo {
@@ -41,12 +43,18 @@ footer {
     text-align: center;
 }
 
+.btn-confira {
+    font-size: 1.7rem;
+    margin: 70px 0 0;
+    font-weight: bold;
+}
+
 .container-fluid {
     padding: 7% 15%;
 }
 
 #topo .container-fluid {
-    padding: 1% 15% 3%;
+    padding: 1% 15% 6%;
 }
 
 .row {
