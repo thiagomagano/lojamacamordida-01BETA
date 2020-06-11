@@ -79,8 +79,9 @@ footer {
 .gmaps {
     border-radius: 2px;
     border: 2px;
-    margin: 10px auto;
-    width: 90%;
+    margin: 20px auto;
+    width: 80%;
+    height: 80%;
     box-shadow: rgba(0, 0, 0, 0.19);
 }
 
@@ -103,6 +104,7 @@ footer {
     text-decoration: none;
     margin-right: 5px;
     color: #630e0a;
+    font-size: 2.5em;
 }
 
 .social-link {
@@ -111,6 +113,24 @@ footer {
 
 .social-link a:hover {
     color: #B24C47;
+}
+
+/* features */
+
+.features-container{
+    padding: 5% 15% 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.feature img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+.feature img:hover{
+    opacity: 0.7;
+    cursor: url("../images/cursor-inv.png"), auto;
 }
 
 
