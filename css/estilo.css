@@ -18,9 +18,25 @@ body p {
     font-family: 'montserrat', sans-serif;
 }
 
+header {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 15% 50px;
+}
+
 footer {
     background-color: var(--corPrimaria);
     color: var(--branco);
+}
+
+.s-escura {
+    background-color: var(--corPrimaria);
+    color: var(--branco);
+}
+
+.s-clara {
+    background-color: var(--corSecundaria);
+    color: var(--corPrimaria);
 }
 
 .container-nav {
@@ -40,50 +56,65 @@ footer {
 }
 
 .img-logo-topo {
-    width: 20%;
+    width: 15%;
 }
 
-.texto-topo {
-    font-size: 4.5rem;
+/* HEALINE CHAMADA PRINCIPAL */
+.headline {
+    margin: 50px auto;
+}
+
+.headline h1 {
+    font-size: 4rem;
     font-weight: bolder;
     line-height: 1.5;
     text-align: center;
 }
 
+.headline p {
+    line-height: 2;
+}
+
+.headline .formulario {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+}
+
 .btn-confira {
     font-size: 1.7rem;
-    margin: 70px 0 0;
     font-weight: bold;
-}
-
-.container-fluid {
-    padding: 7% 15%;
-}
-
-#topo .container-fluid {
-    padding: 1% 15% 6%;
-}
-
-.row {
-    margin-top: 3%;
-}
-
-.foto-topo img {
-    height: 100%;
-    margin-left: 100px;
-}
-
-.s-escura {
-    background-color: var(--corPrimaria);
-    color: var(--branco);
-}
-
-.s-clara {
-    background-color: var(--corSecundaria);
-    color: var(--corPrimaria);
+    margin-left: 10px;
 }
 
 
+
+/* features */
+
+.features-container {
+    width: 100%;
+    min-height: 100VH;
+    padding: 0 15% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.feature {
+    align-self: ceenter;
+}
+
+.feature img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.feature img:hover {
+    opacity: 0.7;
+}
 
 
 /* onde achar */
@@ -95,10 +126,6 @@ footer {
 
 .onde-achar-item {
     align-self: center;
-}
-
-.endereco-cabecalho {
-    /* margin-bottom: 70px; */
 }
 
 .gmaps {
@@ -116,7 +143,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 2.5rem;
 }
 
@@ -136,28 +164,7 @@ footer {
     color: var(--branco);
 }
 
-/* features */
 
-.features-container {
-    padding: 5% 15% 3%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.feature {
-    align-self: ceenter;
-}
-
-.feature img {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 20px;
-}
-
-.feature img:hover {
-    opacity: 0.7;
-}
 
 
 /* produtos */
