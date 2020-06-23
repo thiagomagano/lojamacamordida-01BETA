@@ -41,8 +41,7 @@
   </head>
 
   <body>
-    <header id="topo">
-      <div class="container-nav s-escura">
+    <header id="topo" class='s-escura'>
         <nav class="navbar navbar-expand-lg navbar-dark">
           <a class="navbar-brand" href="#">
             <img
@@ -80,45 +79,43 @@
             </ul>
           </div>
         </nav>
-      </div>
 
-      <div class="container-fluid s-escura">
-        <div class="row">
-          <div class="chamada-topo col-lg-12">
+        <div class="headline s-escura">
             <h1 class="texto-topo">
               A melhor loja de Lingerie e SexShop de Alvorada!
             </h1>
-          </div>
-
-          <div class="foto-topo col-lg-12">
-            <!-- <img src="images/modelo-f.png" alt="foto-topo"> -->
-            <p>
+            <p class='p-topo'>
               A Maçã Mordida 🍎 tem tudo que você precisa para melhorar o seu
               prazer. <br />
               Inscreva-se no nosso feed para receber as novidades e promoções
               mais tops da região.
             </p>
-            <button class="btn btn-lg btn-danger btn-block btn-confira">
+            <div class='formulario'>
+            <form action="">
+            <input placeholder="Seu E-mail" class="col-form">
+            <button type="submit" class="btn btn-lg btn-success btn-confira">
               CONFIRA!
             </button>
-          </div>
+          </form>
+</div>
+            
+            
         </div>
-      </div>
     </header>
 
     <section id="features">
       <div class="features-container">
-        <div class=feature>
-            <img src="images/conjuntos.png" alt="conjuntos">
-            <h3>Conjuntos a partir de R$ 19,90</h3>
+        <div class="feature">
+          <img src="images/conjuntos.png" alt="conjuntos" />
+          <h4>Conjuntos a partir de R$ 19,90</h4>
         </div>
-        <div class=feature>
-            <img src="images/calcinha.png" alt="calcinhas">
-            <h3>Calcinhas 3 por R$ 10,00</h3>
+        <div class="feature">
+          <img src="images/calcinha.png" alt="calcinhas" />
+          <h4>Calcinhas 3 por R$ 10,00</h4>
         </div>
-        <div class=feature>
-            <img src="images/sexshop.png" alt="calcinhas">
-            <h3>Produtos de SexShop a partir R$ 3,99</h3>
+        <div class="feature">
+          <img src="images/sexshop.png" alt="calcinhas" />
+          <h4>Produtos de SexShop a partir R$ 3,99</h4>
         </div>
       </div>
     </section>
@@ -150,56 +147,76 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- <div class="marcas">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-  </div> -->
-    <!-- <section id="depoimentos"></section> -->
 
-    <section id="contato" class="s-clara">
-      <div class="container-fluid contato">
-        <div class="row">
-          <div class="endereco col-lg-6">
-            <h2>Venha Nos Visitar</h2>
-            <!-- PESQUISAR COMO COLOCAR UM LOCAL DO GOOOGLE MAPAS -->
-
-            <iframe
-              class="gmaps"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d863.8586845113081!2d-51.06997817083609!3d-29.99567099886874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951975ac5a8dd4a9%3A0x1f24d6851e829409!2sMa%C3%A7%C3%A3%20Mordida%20Lingerie%20e%20SexShop!5e0!3m2!1spt-BR!2sbr!4v1590716046171!5m2!1spt-BR!2sbr"
-            ></iframe>
-            <p>Av. Getúlio Vargas 3109 parada 52, Alvorada - RS</p>
+      <div class="container-fluid">
+        <h3>Marcas</h3>
+        <div class="marcas-container">
+          <div class="marcas-item">
+            <img
+              src="https://img.irroba.com.br/filters:format(webp):fill(transparent):quality(90)/segredol/catalog/logo-segredo-lacrado.png"
+              alt="Segredo Lacrado"
+            />
           </div>
-          <div class="following col-lg-6">
-            <h2>Siga a Maça!</h2>
+          <div class="marcas-item">
+            <img src="images/logo-vislumbre.png" alt="Vislumbre" />
+          </div>
+          <div class="marcas-item">
+            <img
+              src="https://static.wixstatic.com/media/657007_d23018b637ea4ddbb01ca07d48bc9dfb~mv2.png/v1/crop/x_0,y_2,w_657,h_156/fill/w_660,h_149,al_c,lg_1,q_85/LOGO%20vetor%20Yaffa.webp"
+              alt="Segredo Lacrado"
+            />
+          </div>
+          <div class="marcas-item">
+            <img src="images/hot-flowers-seeklogo.png" alt="Segredo Lacrado" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="social">
-              <div class="social-link">
-                <a
-                  href="https://www.instagram.com/lojamacamordida/"
-                  target="_blank"
-                  ><i class="fab fa-instagram-square fa-3x"></i
-                ></a>
+    <section id="onde-achar" class="s-escura container-fluid">
+      <div class="endereco box-onde-achar">
+        <div class="onde-achar-item endereco">
+          <h2 class="endereco-cabecalho">Venha Nos Visitar</h2>
+          <iframe
+            class="gmaps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d863.8586845113081!2d-51.06997817083609!3d-29.99567099886874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951975ac5a8dd4a9%3A0x1f24d6851e829409!2sMa%C3%A7%C3%A3%20Mordida%20Lingerie%20e%20SexShop!5e0!3m2!1spt-BR!2sbr!4v1590716046171!5m2!1spt-BR!2sbr"
+          ></iframe>
+          <p class="endereco-p">Av. Getúlio Vargas 3109 parada 52, Alvorada - RS</p>
+        </div>
+        <div class="social onde-achar-item">
+          <h2 class='social-cabecalho'>Siga a Maça!</h2>
+          <div class="social-box">
+            <div class="social-item">
+              <a
+                href="https://www.instagram.com/lojamacamordida/"
+                target="_blank"
+                ><i class="fab fa-instagram-square fa-3x"></i
+              > @lojamacamordida</a>
+            </div>
+              <div class="social-item">
                 <a
                   href="https://www.facebook.com/lojamacamordida"
                   target="_blank"
                   ><i class="fab fa-facebook-square fa-3x"></i
-                ></a>
+                > /lojamacamordida</a>
               </div>
-              <div class="social-link">
-                <a href=""><i class="fab fa-twitter-square fa-3x"></i></a>
+
+              <div class="social-item">
+                <a href=""><i class="fab fa-twitter-square fa-3x"></i> @macamordida</a>
+              </div>
+              <div class='social-item'>
                 <a
                   href="https://api.whatsapp.com/send?phone=5551981519607&text=Ola,%20tem%20promo%C3%A7%C3%A3o?"
                   target="_blank"
                   ><i class="fab fa-whatsapp-square fa-3x"></i
-                ></a>
+                > (51) 981519607</a>
               </div>
-            </div>
-            <p>
+              </div>
+            <p class='social-p'>
               Siga nossas redes socias para mais novidades.
             </p>
+            </div>
+            
           </div>
         </div>
       </div>

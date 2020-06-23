@@ -1,8 +1,15 @@
 /* @import url(//db.onlinewebfonts.com/c/161d128374cde99336399af9d7a51f7b?family=Minerva);
 @import url(//fonts.googleapis.com/css2?family=Montserrat); */
+/* Variaveis */
+:root {
+    --corPrimaria: #630e0a;
+    --corSecundaria: #e19999;
+    --branco: #eee;
+    --preto: #222;
+}
 
 body {
-    color: #630e0a;
+    color: var(--corPrimaria);
     font-family: 'Bebas Neue', cursive;
     text-align: center;
 }
@@ -11,9 +18,25 @@ body p {
     font-family: 'montserrat', sans-serif;
 }
 
+header {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 15% 50px;
+}
+
 footer {
-    background-color: #630e0a;
-    color: #e19999;
+    background-color: var(--corPrimaria);
+    color: var(--branco);
+}
+
+.s-escura {
+    background-color: var(--corPrimaria);
+    color: var(--branco);
+}
+
+.s-clara {
+    background-color: var(--corSecundaria);
+    color: var(--corPrimaria);
 }
 
 .container-nav {
@@ -27,111 +50,121 @@ footer {
 
 .logo-label {
     font-family: 'Sacramento', Arial, Helvetica, sans-serif;
-    color: #e19999;
+    color: var(--corSecundaria);
     font-weight: 700;
     font-size: 1.3em
 }
 
 .img-logo-topo {
-    width: 20%;
+    width: 15%;
 }
 
-.texto-topo {
-    font-size: 4.5rem;
+/* HEALINE CHAMADA PRINCIPAL */
+.headline {
+    margin: 50px auto;
+}
+
+.headline h1 {
+    font-size: 4rem;
     font-weight: bolder;
     line-height: 1.5;
     text-align: center;
 }
 
+.headline p {
+    line-height: 2;
+}
+
+.headline .formulario {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+}
+
 .btn-confira {
     font-size: 1.7rem;
-    margin: 70px 0 0;
     font-weight: bold;
+    margin-left: 10px;
 }
 
-.container-fluid {
-    padding: 7% 15%;
-}
 
-#topo .container-fluid {
-    padding: 1% 15% 6%;
-}
-
-.row {
-    margin-top: 3%;
-}
-
-.foto-topo img {
-    height: 100%;
-    margin-left: 100px;
-}
-
-.s-escura {
-    background-color: #630e0a;
-    color: #e19999
-}
-
-.s-clara {
-    background-color: #e19999;
-    color: #630e0a;
-}
-
-.gmaps {
-    border-radius: 2px;
-    border: 2px;
-    margin: 20px auto;
-    width: 80%;
-    height: 80%;
-    box-shadow: rgba(0, 0, 0, 0.19);
-}
-
-.container-fluid.contato {
-    padding: 7% 15%;
-}
-
-#contato h2 {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-
-.social {
-    padding-top: 5%;
-    padding-bottom: 10%;
-}
-
-.social-link a {
-    text-decoration: none;
-    margin-right: 5px;
-    color: #630e0a;
-    font-size: 2.5em;
-}
-
-.social-link {
-    margin: 5px;
-}
-
-.social-link a:hover {
-    color: #B24C47;
-}
 
 /* features */
 
-.features-container{
-    padding: 5% 15% 3%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.features-container {
+    width: 100%;
+    min-height: 100VH;
+    padding: 0 15% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.feature img{
+.feature {
+    align-self: ceenter;
+}
+
+.feature img {
     width: 150px;
     height: 150px;
     margin-bottom: 20px;
 }
-.feature img:hover{
+
+.feature img:hover {
     opacity: 0.7;
-    cursor: url("../images/cursor-inv.png"), auto;
 }
+
+
+/* onde achar */
+.box-onde-achar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.onde-achar-item {
+    align-self: center;
+}
+
+.gmaps {
+    border-radius: 5px;
+    border: 2px;
+    display: block;
+    width: 100%;
+    height: 13rem;
+    box-shadow: var(--preto) 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.social-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.social-item {
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.social-item a {
+    text-decoration: none;
+    color: var(--corSecundaria);
+    font-family: 'montserrat';
+    font-size: 1em;
+}
+
+.social-item a:hover {
+    color: var(--branco);
+}
+
+
 
 
 /* produtos */
@@ -167,9 +200,32 @@ figcaption {
     font-size: 0.9em;
 }
 
+.marcas-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.marcas-item {
+    align-self: center;
+    margin: 10px auto;
+}
+
+.marcas-item img {
+    max-width: 200px;
+    /* max-height: 70px; */
+}
+
 .footer-p {
     padding: 25px 0 20px;
     margin: 0;
     font-size: 0.8em;
     font-family: 'Montserrat';
+}
+
+@media screen and (max-width: 450px) {
+    .logo-label {
+        font-size: 1rem;
+    }
 }
